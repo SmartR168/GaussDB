@@ -1,0 +1,452 @@
+脚本启动于 2026年11月03日 星期二 15时50分21秒
+RUN_START 2026-11-03T15:50:21.163581076+08:00
+Database password (not echoed): 
+11月 03, 2026 3:52:03 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [563e656c-6232-4f9f-8a2a-fe695bd7c14d] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:03 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39082/192.168.0.125:8000] Connection is established. ID: 563e656c-6232-4f9f-8a2a-fe695bd7c14d
+11月 03, 2026 3:52:03 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 563e656c-6232-4f9f-8a2a-fe695bd7c14d
+JDBC GaussDB JDBC Driver /*$mvn.project.property.parsedversion.osgiversion$*/
+current_database | current_user | version | current_timestamp
+finance | db_dev | gaussdb (GaussDB Kernel 507.0.0 build d414f3bb) compiled at 2026-05-31 13:54:37 last mr 27222 release | 2026-11-03 15:52:04.14631
+(1 rows)
+PASS 1 Ordinary development user db_dev connected
+11月 03, 2026 3:52:03 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [916c07c9-d440-4b85-a6ea-267b60b5e2e1] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:03 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39084/192.168.0.125:8000] Connection is established. ID: 916c07c9-d440-4b85-a6ea-267b60b5e2e1
+11月 03, 2026 3:52:03 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 916c07c9-d440-4b85-a6ea-267b60b5e2e1
+SCHEMA_CREATED: 4 business tables + 2 extension tables
+11月 03, 2026 3:52:03 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [79ba81a4-c911-4c8e-b55a-520854395f51] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39086/192.168.0.125:8000] Connection is established. ID: 79ba81a4-c911-4c8e-b55a-520854395f51
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 79ba81a4-c911-4c8e-b55a-520854395f51
+SEED client=10
+SEED bank_card=10
+SEED financial_product=4
+SEED financial_asset=4
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [8ef00fbd-189e-4856-a250-f5e79c660d3a] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39088/192.168.0.125:8000] Connection is established. ID: 8ef00fbd-189e-4856-a250-f5e79c660d3a
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 8ef00fbd-189e-4856-a250-f5e79c660d3a
+PASS 2 DAO seed lists 10/10/4/4
+PASS 3 DAO primary-key lookups
+PASS 4 DAO missing keys return empty
+PASS 5 DAO insert client
+PASS 6 DAO update client
+PASS 7 DAO missing update reports zero
+PASS 8 DAO insert and count card
+PASS 9 DAO insert and count asset
+PASS 10 Primary key duplicate rejected [SQLSTATE=23505]
+PASS 11 Foreign key orphan rejected [SQLSTATE=23503]
+PASS 12 Nonpositive quantity rejected [SQLSTATE=23514]
+PASS 13 DAO delete in dependency order
+PASS 14 DAO missing deletes report zero
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [f128d80b-638a-46a6-b40e-ec6cde011cea] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39090/192.168.0.125:8000] Connection is established. ID: f128d80b-638a-46a6-b40e-ec6cde011cea
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: f128d80b-638a-46a6-b40e-ec6cde011cea
+PASS 15 DAO test rolled back; seed intact
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [e5825905-11d0-40ad-96a3-9931c426caf7] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39092/192.168.0.125:8000] Connection is established. ID: e5825905-11d0-40ad-96a3-9931c426caf7
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: e5825905-11d0-40ad-96a3-9931c426caf7
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [27825b0c-ed21-40fe-b61c-2b61df213e2a] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39094/192.168.0.125:8000] Connection is established. ID: 27825b0c-ed21-40fe-b61c-2b61df213e2a
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 27825b0c-ed21-40fe-b61c-2b61df213e2a
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [aa04b3c9-6fb9-4e30-97b9-166190dcd125] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39096/192.168.0.125:8000] Connection is established. ID: aa04b3c9-6fb9-4e30-97b9-166190dcd125
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: aa04b3c9-6fb9-4e30-97b9-166190dcd125
+PASS 16 Reserved test namespace is empty
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [66124b4e-0567-4665-acbc-8d376e6fade8] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39098/192.168.0.125:8000] Connection is established. ID: 66124b4e-0567-4665-acbc-8d376e6fade8
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 66124b4e-0567-4665-acbc-8d376e6fade8
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [9b5cbe4f-ce21-4c6c-aba9-e355783e4eb0] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39100/192.168.0.125:8000] Connection is established. ID: 9b5cbe4f-ce21-4c6c-aba9-e355783e4eb0
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 9b5cbe4f-ce21-4c6c-aba9-e355783e4eb0
+PASS 17 Open account and query detail
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [fd9152cc-568f-48a4-a071-5747a839f55b] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39102/192.168.0.125:8000] Connection is established. ID: fd9152cc-568f-48a4-a071-5747a839f55b
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: fd9152cc-568f-48a4-a071-5747a839f55b
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [44170c69-3e90-4b65-978b-45acedf332a9] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39104/192.168.0.125:8000] Connection is established. ID: 44170c69-3e90-4b65-978b-45acedf332a9
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 44170c69-3e90-4b65-978b-45acedf332a9
+PASS 18 Modify client persisted
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [f2bba4d0-1115-461a-8f4a-2739bad8159c] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39106/192.168.0.125:8000] Connection is established. ID: f2bba4d0-1115-461a-8f4a-2739bad8159c
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: f2bba4d0-1115-461a-8f4a-2739bad8159c
+PASS 19 Missing modify fails [SQLSTATE=P0002]
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [96486982-8045-43db-bbbc-22bc76ea1268] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39108/192.168.0.125:8000] Connection is established. ID: 96486982-8045-43db-bbbc-22bc76ea1268
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 96486982-8045-43db-bbbc-22bc76ea1268
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [ab30c562-2c6a-44ae-8713-fa5f30b40c4e] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39110/192.168.0.125:8000] Connection is established. ID: ab30c562-2c6a-44ae-8713-fa5f30b40c4e
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: ab30c562-2c6a-44ae-8713-fa5f30b40c4e
+PASS 20 Account with card cannot close [SQLSTATE=P0001]
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [c1a9f230-d554-439f-8e47-350a40bea6c1] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39112/192.168.0.125:8000] Connection is established. ID: c1a9f230-d554-439f-8e47-350a40bea6c1
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: c1a9f230-d554-439f-8e47-350a40bea6c1
+PASS 21 Cannot close another client's card [SQLSTATE=P0002]
+PASS 22 Zero purchase amount rejected before transaction
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [3d081745-54b7-48bc-80ca-839589fa5575] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39114/192.168.0.125:8000] Connection is established. ID: 3d081745-54b7-48bc-80ca-839589fa5575
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 3d081745-54b7-48bc-80ca-839589fa5575
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [1b9fa3f3-d647-4163-ac3a-8c559655ae0b] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39116/192.168.0.125:8000] Connection is established. ID: 1b9fa3f3-d647-4163-ac3a-8c559655ae0b
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 1b9fa3f3-d647-4163-ac3a-8c559655ae0b
+PASS 23 Failed request leaves no request/event: lab5_badamount
+PASS 24 Invalid request ID rejected
+PASS 25 Invalid contact rejected before update
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [1dc662fe-95fd-4b7e-bd0e-e4287d7352bb] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39118/192.168.0.125:8000] Connection is established. ID: 1dc662fe-95fd-4b7e-bd0e-e4287d7352bb
+11月 03, 2026 3:52:04 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 1dc662fe-95fd-4b7e-bd0e-e4287d7352bb
+PASS 26 Unknown buy client rejected [SQLSTATE=P0002]
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [e9e134a4-596f-415f-8411-8d55f53b7d6f] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39120/192.168.0.125:8000] Connection is established. ID: e9e134a4-596f-415f-8411-8d55f53b7d6f
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: e9e134a4-596f-415f-8411-8d55f53b7d6f
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [31f1dac3-9e9d-48a4-a3ab-5f02f621afdf] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39122/192.168.0.125:8000] Connection is established. ID: 31f1dac3-9e9d-48a4-a3ab-5f02f621afdf
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 31f1dac3-9e9d-48a4-a3ab-5f02f621afdf
+PASS 27 Failed request leaves no request/event: lab5_badclient
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [a4b2e2fc-2da2-4796-86cb-522a2843e02b] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39124/192.168.0.125:8000] Connection is established. ID: a4b2e2fc-2da2-4796-86cb-522a2843e02b
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: a4b2e2fc-2da2-4796-86cb-522a2843e02b
+PASS 28 Unknown buy product rejected [SQLSTATE=P0002]
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [5dca7901-7d7c-4600-99a3-4acc41fdcee5] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39126/192.168.0.125:8000] Connection is established. ID: 5dca7901-7d7c-4600-99a3-4acc41fdcee5
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 5dca7901-7d7c-4600-99a3-4acc41fdcee5
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [10536d97-cc1a-4863-a708-c7c3d73cc45d] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39128/192.168.0.125:8000] Connection is established. ID: 10536d97-cc1a-4863-a708-c7c3d73cc45d
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 10536d97-cc1a-4863-a708-c7c3d73cc45d
+PASS 29 Failed request leaves no request/event: lab5_badproduct
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [9eed5ebb-f8a0-496e-ae5e-fa4375a657a7] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39130/192.168.0.125:8000] Connection is established. ID: 9eed5ebb-f8a0-496e-ae5e-fa4375a657a7
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 9eed5ebb-f8a0-496e-ae5e-fa4375a657a7
+PASS 30 Injected failure rolls back [SQLSTATE=P0001]
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [f11dc850-819a-4bcf-b606-10bc9b4ba5b0] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39132/192.168.0.125:8000] Connection is established. ID: f11dc850-819a-4bcf-b606-10bc9b4ba5b0
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: f11dc850-819a-4bcf-b606-10bc9b4ba5b0
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [2b5f1143-eba7-4d84-b391-cb6fe495f809] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39134/192.168.0.125:8000] Connection is established. ID: 2b5f1143-eba7-4d84-b391-cb6fe495f809
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 2b5f1143-eba7-4d84-b391-cb6fe495f809
+PASS 31 Failed request leaves no request/event: lab5_rollback
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [46407139-f892-4971-a1fb-1dfc56c4ea39] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39136/192.168.0.125:8000] Connection is established. ID: 46407139-f892-4971-a1fb-1dfc56c4ea39
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 46407139-f892-4971-a1fb-1dfc56c4ea39
+PASS 32 Injected failure leaves no asset
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [68d2ee67-33f6-407e-8ecf-0a0e62249ab2] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39138/192.168.0.125:8000] Connection is established. ID: 68d2ee67-33f6-407e-8ecf-0a0e62249ab2
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 68d2ee67-33f6-407e-8ecf-0a0e62249ab2
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [c081fa2c-bde7-4cb0-95f3-64075db4eb02] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39140/192.168.0.125:8000] Connection is established. ID: c081fa2c-bde7-4cb0-95f3-64075db4eb02
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: c081fa2c-bde7-4cb0-95f3-64075db4eb02
+PASS 33 Same buy request replays original receipt
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [5296c122-2948-4ce3-a251-5e9382db2aa9] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39142/192.168.0.125:8000] Connection is established. ID: 5296c122-2948-4ce3-a251-5e9382db2aa9
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 5296c122-2948-4ce3-a251-5e9382db2aa9
+PASS 34 Same request with changed quantity rejected [SQLSTATE=P0001]
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [a00f2320-28d6-43ab-a6f6-9d6c5c03597d] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39144/192.168.0.125:8000] Connection is established. ID: a00f2320-28d6-43ab-a6f6-9d6c5c03597d
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: a00f2320-28d6-43ab-a6f6-9d6c5c03597d
+PASS 35 Same request with changed purchase date rejected [SQLSTATE=P0001]
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [9d822f58-e5ac-4bd1-8fe0-069e9f5ea8f6] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39146/192.168.0.125:8000] Connection is established. ID: 9d822f58-e5ac-4bd1-8fe0-069e9f5ea8f6
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 9d822f58-e5ac-4bd1-8fe0-069e9f5ea8f6
+PASS 36 Same request with changed action rejected [SQLSTATE=P0001]
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [f8c1a7a4-67e1-4b55-8690-bb63dbf056f8] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39148/192.168.0.125:8000] Connection is established. ID: f8c1a7a4-67e1-4b55-8690-bb63dbf056f8
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: f8c1a7a4-67e1-4b55-8690-bb63dbf056f8
+PASS 37 Cannot redeem another client's asset [SQLSTATE=P0002]
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [2cb75c41-53ec-4989-a346-ca89228484da] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39150/192.168.0.125:8000] Connection is established. ID: 2cb75c41-53ec-4989-a346-ca89228484da
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 2cb75c41-53ec-4989-a346-ca89228484da
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [bed8c7ca-9035-4d81-9e1c-5ecc64701310] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39152/192.168.0.125:8000] Connection is established. ID: bed8c7ca-9035-4d81-9e1c-5ecc64701310
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: bed8c7ca-9035-4d81-9e1c-5ecc64701310
+PASS 38 Failed request leaves no request/event: lab5_wrongowner
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [0cfaad3b-5aab-45b3-96c7-ae1f28d7d5ea] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39154/192.168.0.125:8000] Connection is established. ID: 0cfaad3b-5aab-45b3-96c7-ae1f28d7d5ea
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 0cfaad3b-5aab-45b3-96c7-ae1f28d7d5ea
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [83706aa6-1a9e-4d68-850e-151e6f649d80] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39156/192.168.0.125:8000] Connection is established. ID: 83706aa6-1a9e-4d68-850e-151e6f649d80
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 83706aa6-1a9e-4d68-850e-151e6f649d80
+PASS 39 Replay creates one asset and one event
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [3b9643ef-8f5e-4653-bbb3-d3249449bede] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39158/192.168.0.125:8000] Connection is established. ID: 3b9643ef-8f5e-4653-bbb3-d3249449bede
+11月 03, 2026 3:52:05 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 3b9643ef-8f5e-4653-bbb3-d3249449bede
+PASS 40 Account with assets cannot close [SQLSTATE=P0001]
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [f1b2c482-0f5a-42de-86c0-c09a6653a1be] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39160/192.168.0.125:8000] Connection is established. ID: f1b2c482-0f5a-42de-86c0-c09a6653a1be
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: f1b2c482-0f5a-42de-86c0-c09a6653a1be
+PASS 41 Frozen seed asset cannot redeem [SQLSTATE=P0001]
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [711257ac-cc9a-4c2c-81e0-57b2bab38052] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39162/192.168.0.125:8000] Connection is established. ID: 711257ac-cc9a-4c2c-81e0-57b2bab38052
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 711257ac-cc9a-4c2c-81e0-57b2bab38052
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [e700f506-c858-41e0-99de-370480b25ad4] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39164/192.168.0.125:8000] Connection is established. ID: e700f506-c858-41e0-99de-370480b25ad4
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: e700f506-c858-41e0-99de-370480b25ad4
+PASS 42 Failed request leaves no request/event: lab5_frozen
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [7fdeef9e-7f05-4b6f-a06a-d43a365a83f0] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39166/192.168.0.125:8000] Connection is established. ID: 7fdeef9e-7f05-4b6f-a06a-d43a365a83f0
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 7fdeef9e-7f05-4b6f-a06a-d43a365a83f0
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [f17bcf82-1c57-463a-b615-605e7fa4a913] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39168/192.168.0.125:8000] Connection is established. ID: f17bcf82-1c57-463a-b615-605e7fa4a913
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: f17bcf82-1c57-463a-b615-605e7fa4a913
+PASS 43 Redeem replay works after holding deletion
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [069bfe4a-cd25-4654-804c-a4f53ae1ab1e] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39170/192.168.0.125:8000] Connection is established. ID: 069bfe4a-cd25-4654-804c-a4f53ae1ab1e
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 069bfe4a-cd25-4654-804c-a4f53ae1ab1e
+PASS 44 Different request cannot redeem deleted holding [SQLSTATE=P0002]
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [7682c1d6-0123-435f-a893-83fa0b97e0ca] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39172/192.168.0.125:8000] Connection is established. ID: 7682c1d6-0123-435f-a893-83fa0b97e0ca
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 7682c1d6-0123-435f-a893-83fa0b97e0ca
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [fe82a306-7df7-485b-9e92-a850f44ce4d8] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39174/192.168.0.125:8000] Connection is established. ID: fe82a306-7df7-485b-9e92-a850f44ce4d8
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: fe82a306-7df7-485b-9e92-a850f44ce4d8
+PASS 45 Failed request leaves no request/event: lab5_again
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [6f2c4d1b-7ef8-4510-ba96-2e311e85e5db] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [fd098097-69aa-47aa-b708-e1de54e6761b] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39176/192.168.0.125:8000] Connection is established. ID: 6f2c4d1b-7ef8-4510-ba96-2e311e85e5db
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39178/192.168.0.125:8000] Connection is established. ID: fd098097-69aa-47aa-b708-e1de54e6761b
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: fd098097-69aa-47aa-b708-e1de54e6761b
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 6f2c4d1b-7ef8-4510-ba96-2e311e85e5db
+CONCURRENT_RESULTS [asset=920002, replay=true, asset=920002, replay=false]
+PASS 46 Concurrent same-key buy: one commit, one replay
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [be58df68-0e4e-4e1b-ba0d-e41739cd377a] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39180/192.168.0.125:8000] Connection is established. ID: be58df68-0e4e-4e1b-ba0d-e41739cd377a
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: be58df68-0e4e-4e1b-ba0d-e41739cd377a
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [f2876dc9-455d-478b-923c-8ab359602251] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39182/192.168.0.125:8000] Connection is established. ID: f2876dc9-455d-478b-923c-8ab359602251
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: f2876dc9-455d-478b-923c-8ab359602251
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [a6daf04c-090d-44ea-8177-91dc11ab8239] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39184/192.168.0.125:8000] Connection is established. ID: a6daf04c-090d-44ea-8177-91dc11ab8239
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: a6daf04c-090d-44ea-8177-91dc11ab8239
+PASS 47 Concurrent buy database cardinalities 1/1/1
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [d230990e-b4ef-402e-b001-a35396f672b4] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [3782f428-539c-454a-a240-a0b1ca2969e0] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39186/192.168.0.125:8000] Connection is established. ID: d230990e-b4ef-402e-b001-a35396f672b4
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39188/192.168.0.125:8000] Connection is established. ID: 3782f428-539c-454a-a240-a0b1ca2969e0
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: d230990e-b4ef-402e-b001-a35396f672b4
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 3782f428-539c-454a-a240-a0b1ca2969e0
+CONCURRENT_RESULTS [asset=920002, replay=false, java.sql.SQLException: Asset does not exist or is not owned by this client]
+PASS 48 Concurrent different-key redeem: exactly one success
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [0b0181b3-9622-4262-a115-525903e8fb74] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39190/192.168.0.125:8000] Connection is established. ID: 0b0181b3-9622-4262-a115-525903e8fb74
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 0b0181b3-9622-4262-a115-525903e8fb74
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [6a0f955c-9059-4e1e-a8be-1a1908f054bc] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39192/192.168.0.125:8000] Connection is established. ID: 6a0f955c-9059-4e1e-a8be-1a1908f054bc
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 6a0f955c-9059-4e1e-a8be-1a1908f054bc
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [eec9ac07-269f-4d1f-bc77-8fe8d4614dc4] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39194/192.168.0.125:8000] Connection is established. ID: eec9ac07-269f-4d1f-bc77-8fe8d4614dc4
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: eec9ac07-269f-4d1f-bc77-8fe8d4614dc4
+PASS 49 Redeem loser rolled back; one committed audit event
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [d82b9466-d570-4782-91df-64a845bbc5f5] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39196/192.168.0.125:8000] Connection is established. ID: d82b9466-d570-4782-91df-64a845bbc5f5
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: d82b9466-d570-4782-91df-64a845bbc5f5
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [b685b4a7-4b97-413e-a847-1e07a6ff10f5] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39198/192.168.0.125:8000] Connection is established. ID: b685b4a7-4b97-413e-a847-1e07a6ff10f5
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: b685b4a7-4b97-413e-a847-1e07a6ff10f5
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [1c192f7c-a745-4c8a-873d-37ea80cf5e70] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39200/192.168.0.125:8000] Connection is established. ID: 1c192f7c-a745-4c8a-873d-37ea80cf5e70
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 1c192f7c-a745-4c8a-873d-37ea80cf5e70
+PASS 50 Close card then account succeeds
+11月 03, 2026 3:52:06 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [b49a47ea-761b-461d-91b8-56c4a496becd] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:07 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39202/192.168.0.125:8000] Connection is established. ID: b49a47ea-761b-461d-91b8-56c4a496becd
+11月 03, 2026 3:52:07 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: b49a47ea-761b-461d-91b8-56c4a496becd
+PASS 51 Transaction history survives account closure
+11月 03, 2026 3:52:07 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [a0f4f4b9-2f86-4df4-b13b-588665fc09bf] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:52:07 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39204/192.168.0.125:8000] Connection is established. ID: a0f4f4b9-2f86-4df4-b13b-588665fc09bf
+11月 03, 2026 3:52:07 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: a0f4f4b9-2f86-4df4-b13b-588665fc09bf
+Exception in thread "main" com.huawei.gaussdb.jdbc.util.PSQLException: [192.168.0.126:39204/192.168.0.125:8000] ERROR: invalid value "18-07-31" for "MON"
+  ???The given value did not match any of the allowed values for this field.
+  ???73
+	at com.huawei.gaussdb.jdbc.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:3315)
+	at com.huawei.gaussdb.jdbc.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:3002)
+	at com.huawei.gaussdb.jdbc.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:446)
+	at com.huawei.gaussdb.jdbc.jdbc.PgStatement.runQueryExecutor(PgStatement.java:657)
+	at com.huawei.gaussdb.jdbc.jdbc.PgStatement.executeInternal(PgStatement.java:613)
+	at com.huawei.gaussdb.jdbc.jdbc.PgStatement.execute(PgStatement.java:445)
+	at com.huawei.gaussdb.jdbc.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:165)
+	at com.huawei.gaussdb.jdbc.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:127)
+	at expt.db.finance.DBUtils.update(DBUtils.java:34)
+	at expt.db.finance.ScenarioTest.reportFixture(ScenarioTest.java:79)
+	at expt.db.finance.ScenarioTest.run(ScenarioTest.java:70)
+	at expt.db.finance.Acceptance.main(Acceptance.java:17)

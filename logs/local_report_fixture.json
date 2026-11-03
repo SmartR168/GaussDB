@@ -1,0 +1,42 @@
+{
+  "engine": "SQLite local fixture; not GaussDB",
+  "checks": [
+    "Word seed cardinalities 10/10/4/4",
+    "Seed amount 10 and income 32010",
+    "Multiple cards/assets are preaggregated without multiplying amounts",
+    "Zero-holding client is retained",
+    "Distinct product holders and frozen amount",
+    "July interval includes July 31 and excludes August 1",
+    "August lower boundary is included once",
+    "Counterexample demonstrates doubled amount from naive join",
+    "Empty reporting interval has no rows"
+  ],
+  "client1": {
+    "c_id": 1,
+    "c_name": "左晓婷",
+    "card_count": 2,
+    "asset_count": 3,
+    "quantity_total": 304,
+    "income_total": 8017,
+    "available_quantity": 104,
+    "frozen_quantity": 200
+  },
+  "july": [
+    {
+      "purchase_month": "2018-07",
+      "purchase_count": 5,
+      "client_count": 4,
+      "quantity_total": 110,
+      "income_total": 32017
+    }
+  ],
+  "august": [
+    {
+      "purchase_month": "2018-08",
+      "purchase_count": 1,
+      "client_count": 1,
+      "quantity_total": 200,
+      "income_total": 9
+    }
+  ]
+}

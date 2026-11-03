@@ -1,0 +1,5 @@
+request_id,action,payload_hash,result_id,result_code
+"lab5_buy","BUY","871aaf640b860c4cdc31385328011089e2d01b581e270601fd90607e805beea9","920001","SUCCESS"
+"lab5_race_buy","BUY","cc6ef12bd8e399cba67912f77decbd915c8a091ba9690ec75ff17def203477de","920002","SUCCESS"
+"lab5_race_ra","REDEEM","d92b91551b7c233ce6b8b29e55a744497a27b97fa1a525f05ffb38ba5a2f06e4","920002","SUCCESS"
+"lab5_redeem","REDEEM","9ee7bb6be981df8d6a8fb62ca1bc60fbdfb0f50b0c55087af0cd9254d9dd2dd6","920001","SUCCESS"

@@ -1,0 +1,125 @@
+脚本启动于 2026年11月03日 星期二 16时19分50秒
+RUN_START 2026-11-03T16:19:50.430292756+08:00
+Database password (not echoed): 
+11月 03, 2026 4:21:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [32b3eac6-5b48-4c3f-8e00-46c867d0c15d] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 4:21:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39390/192.168.0.125:8000] Connection is established. ID: 32b3eac6-5b48-4c3f-8e00-46c867d0c15d
+11月 03, 2026 4:21:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 32b3eac6-5b48-4c3f-8e00-46c867d0c15d
+JDBC GaussDB JDBC Driver /*$mvn.project.property.parsedversion.osgiversion$*/
+current_database | current_user | version | current_timestamp
+finance | db_dev | gaussdb (GaussDB Kernel 507.0.0 build d414f3bb) compiled at 2026-05-31 13:54:37 last mr 27222 release | 2026-11-03 16:21:44.408139
+(1 rows)
+PASS 1 Ordinary development user db_dev connected
+11月 03, 2026 4:21:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [9d1d0f41-3aca-4956-baf2-82ca3647f8fc] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 4:21:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39392/192.168.0.125:8000] Connection is established. ID: 9d1d0f41-3aca-4956-baf2-82ca3647f8fc
+11月 03, 2026 4:21:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 9d1d0f41-3aca-4956-baf2-82ca3647f8fc
+tablename | tableowner
+bank_card | db_dev
+client | db_dev
+command_request | db_dev
+financial_asset | db_dev
+financial_product | db_dev
+transaction_event | db_dev
+(6 rows)
+tablename | indexname
+bank_card | bank_card_pkey
+bank_card | idx_card_client
+client | client_c_id_card_key
+client | client_c_mail_key
+client | client_c_phone_key
+client | client_pkey
+command_request | command_request_pkey
+financial_asset | financial_asset_pkey
+financial_asset | idx_asset_client
+financial_asset | idx_asset_product
+financial_asset | idx_asset_purchase
+financial_product | financial_product_pkey
+transaction_event | transaction_event_pkey
+(13 rows)
+FINAL_COUNT client=10
+PASS 2 Expected final row count: client
+FINAL_COUNT bank_card=10
+PASS 3 Expected final row count: bank_card
+FINAL_COUNT financial_product=4
+PASS 4 Expected final row count: financial_product
+FINAL_COUNT financial_asset=4
+PASS 5 Expected final row count: financial_asset
+FINAL_COUNT command_request=4
+PASS 6 Expected final row count: command_request
+FINAL_COUNT transaction_event=4
+PASS 7 Expected final row count: transaction_event
+PASS 8 No incomplete committed requests
+PASS 9 One audit event for every committed command
+request_id | action | asset_id | client_id | product_id | quantity | income | event_time
+lab5_buy | BUY | 920001 | 910001 | 1 | 100 | 0 | 2026-11-03 15:52:05.902102
+lab5_race_buy | BUY | 920002 | 910001 | 1 | 200 | 0 | 2026-11-03 15:52:06.870364
+lab5_race_ra | REDEEM | 920002 | 910001 | 1 | 200 | 0 | 2026-11-03 15:52:07.082244
+lab5_redeem | REDEEM | 920001 | 910001 | 1 | 100 | 0 | 2026-11-03 15:52:06.609708
+(4 rows)
+11月 03, 2026 4:21:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [ddc10ca6-fe9b-433e-93ee-85eaf7359c5d] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 4:21:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39394/192.168.0.125:8000] Connection is established. ID: ddc10ca6-fe9b-433e-93ee-85eaf7359c5d
+11月 03, 2026 4:21:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: ddc10ca6-fe9b-433e-93ee-85eaf7359c5d
+REPORT client
+c_id | c_name | card_count | asset_count | quantity_total | income_total | available_quantity | frozen_quantity
+1 | 左晓婷 | 1 | 1 | 4 | 8001 | 4 | 0
+2 | 虞成刚 | 1 | 1 | 3 | 8002 | 3 | 0
+3 | 朱长刚 | 1 | 1 | 2 | 8003 | 2 | 0
+4 | 任高峰 | 1 | 1 | 1 | 8004 | 0 | 1
+5 | 安艳芳 | 1 | 0 | 0 | 0 | 0 | 0
+6 | 滕长丽 | 1 | 0 | 0 | 0 | 0 | 0
+7 | 傅小芳 | 1 | 0 | 0 | 0 | 0 | 0
+8 | 卞兰娟 | 1 | 0 | 0 | 0 | 0 | 0
+9 | 邵小婷 | 1 | 0 | 0 | 0 | 0 | 0
+10 | 章晓峰 | 1 | 0 | 0 | 0 | 0 | 0
+(10 rows)
+11月 03, 2026 4:21:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [1d299137-7c21-4dac-bd3b-ccc515c22869] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 4:21:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39396/192.168.0.125:8000] Connection is established. ID: 1d299137-7c21-4dac-bd3b-ccc515c22869
+11月 03, 2026 4:21:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 1d299137-7c21-4dac-bd3b-ccc515c22869
+REPORT product
+p_id | p_name | asset_count | client_count | quantity_total | income_total | frozen_quantity
+1 | 债券 | 1 | 1 | 4 | 8001 | 0
+2 | 信贷资产 | 1 | 1 | 3 | 8002 | 0
+3 | 股票 | 1 | 1 | 2 | 8003 | 0
+4 | 大宗商品 | 1 | 1 | 1 | 8004 | 1
+(4 rows)
+11月 03, 2026 4:21:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [034f2a67-58cd-4d03-8e9d-a59f77739092] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 4:21:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39398/192.168.0.125:8000] Connection is established. ID: 034f2a67-58cd-4d03-8e9d-a59f77739092
+11月 03, 2026 4:21:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 034f2a67-58cd-4d03-8e9d-a59f77739092
+REPORT month
+purchase_month | purchase_count | client_count | quantity_total | income_total
+2018-07 | 4 | 4 | 10 | 32010
+(1 rows)
+11月 03, 2026 4:21:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [8b8bceb2-8d3a-436a-9aa1-9f215039b17b] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 4:21:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39400/192.168.0.125:8000] Connection is established. ID: 8b8bceb2-8d3a-436a-9aa1-9f215039b17b
+11月 03, 2026 4:21:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 8b8bceb2-8d3a-436a-9aa1-9f215039b17b
+SNAPSHOT_SHA256 client 751bc7c9732138b37b06eda3f56bb41d4b9312837aecbb751baba91333b1d437
+PASS 10 Switchover preserves all ordered rows: client
+SNAPSHOT_SHA256 bank_card 050f279d3f32bdca761aef1869e45957b6ac76df9d911a0c3beb847a7a73aa3c
+PASS 11 Switchover preserves all ordered rows: bank_card
+SNAPSHOT_SHA256 financial_product 882e0b896d3cce172a8be688db5485ea9f01a3ac35e97c80b184cd9ecbec1279
+PASS 12 Switchover preserves all ordered rows: financial_product
+SNAPSHOT_SHA256 financial_asset cd4afec14143bc737073317ede0186f8dc582dd6c523dbb317564f36b626ab0c
+PASS 13 Switchover preserves all ordered rows: financial_asset
+SNAPSHOT_SHA256 command_request ed151cf7a71cbd7ce79d34892b496ab0de5a37b3c668ee6daa27b2ccae42bbfc
+PASS 14 Switchover preserves all ordered rows: command_request
+SNAPSHOT_SHA256 transaction_event 150c25bbf8adb7875775f65d4aaf614cca17ed249d5139afc428024e7bf7dc71
+PASS 15 Switchover preserves all ordered rows: transaction_event
+ALL_CHECKS_PASSED=15
+RUN_END 2026-11-03T16:21:43.943667652+08:00

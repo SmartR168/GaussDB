@@ -1,0 +1,14 @@
+/build/
+/libs/
+/config/db.properties
+/scripts/env.sh
+/tmp/
+*.class
+*.jar
+*.aux
+*.log
+*.out
+*.synctex.gz
+__pycache__/
+.DS_Store
+Thumbs.db

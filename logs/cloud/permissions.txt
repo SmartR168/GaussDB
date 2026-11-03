@@ -1,0 +1,25 @@
+脚本启动于 2026年11月03日 星期二 16时02分39秒
+Existing password for db_dev: 
+Existing password for test: 
+11月 03, 2026 4:03:31 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [172498cd-7712-453d-9a2b-33bee7c90a1a] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 4:03:31 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39284/192.168.0.125:8000] Connection is established. ID: 172498cd-7712-453d-9a2b-33bee7c90a1a
+11月 03, 2026 4:03:31 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 172498cd-7712-453d-9a2b-33bee7c90a1a
+STAGE_1 no schema and no table permission
+11月 03, 2026 4:03:31 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [3dc90f9f-aed7-478a-b254-44d4ee1d0d6c] Try to connect. IP: 192.168.0.125:8000
+Exception in thread "main" com.huawei.gaussdb.jdbc.util.PSQLException: [192.168.0.126:39286/192.168.0.125:8000] ERROR: Invalid username/password,login denied.
+	at com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:917)
+	at com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:253)
+	at com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:335)
+	at com.huawei.gaussdb.jdbc.core.ConnectionFactory.openConnection(ConnectionFactory.java:56)
+	at com.huawei.gaussdb.jdbc.jdbc.PgConnection.<init>(PgConnection.java:361)
+	at com.huawei.gaussdb.jdbc.Driver.makeConnection(Driver.java:691)
+	at com.huawei.gaussdb.jdbc.Driver.connect(Driver.java:370)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at expt.db.finance.Provision.connect(Provision.java:19)
+	at expt.db.finance.PermissionCheck.select(PermissionCheck.java:7)
+	at expt.db.finance.PermissionCheck.main(PermissionCheck.java:22)

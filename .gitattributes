@@ -1,0 +1,12 @@
+* text=auto eol=lf
+*.sh text eol=lf
+*.sql text eol=lf
+*.java text eol=lf
+*.md text eol=lf
+*.properties.example text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+logs/cloud/*.txt -text -whitespace
+*.png binary
+*.pdf binary
+*.zip binary

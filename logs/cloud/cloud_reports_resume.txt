@@ -1,0 +1,27 @@
+脚本启动于 2026年11月03日 星期二 15时55分56秒
+RUN_START 2026-11-03T15:55:56.213340172+08:00
+Database password (not echoed): 
+11月 03, 2026 3:58:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [dc35fa89-7765-4404-8952-fd84d0dabf81] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:58:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39242/192.168.0.125:8000] Connection is established. ID: dc35fa89-7765-4404-8952-fd84d0dabf81
+11月 03, 2026 3:58:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: dc35fa89-7765-4404-8952-fd84d0dabf81
+JDBC GaussDB JDBC Driver /*$mvn.project.property.parsedversion.osgiversion$*/
+current_database | current_user | version | current_timestamp
+finance | db_dev | gaussdb (GaussDB Kernel 507.0.0 build d414f3bb) compiled at 2026-05-31 13:54:37 last mr 27222 release | 2026-11-03 15:58:44.461587
+(1 rows)
+PASS 1 Ordinary development user db_dev connected
+11月 03, 2026 3:58:43 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [b81d8273-be58-4af3-a766-5357d843ebbb] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 3:58:44 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39244/192.168.0.125:8000] Connection is established. ID: b81d8273-be58-4af3-a766-5357d843ebbb
+11月 03, 2026 3:58:44 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: b81d8273-be58-4af3-a766-5357d843ebbb
+PASS 2 Report preaggregation: two cards/three assets, amount 304 not 608
+PASS 3 Report preserves zero-holding client
+PASS 4 Product distinct holder count and amount
+Exception in thread "main" java.lang.AssertionError: FAIL July includes July 31, excludes August 1; amount 110
+	at expt.db.finance.Checks.that(Checks.java:6)
+	at expt.db.finance.ScenarioTest.reportFixture(ScenarioTest.java:90)
+	at expt.db.finance.Acceptance.main(Acceptance.java:19)

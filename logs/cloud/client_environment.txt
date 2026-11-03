@@ -1,0 +1,13 @@
+2026-11-03T15:47:16+0800
+ecs-name
+x86_64
+CentOS Linux release 7.6.1810 (Core) 
+openjdk version "11.0.10" 2021-01-19
+OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.10+9)
+Eclipse OpenJ9 VM AdoptOpenJDK (build openj9-0.24.0, JRE 11 Linux amd64-64-Bit 20210120_821 (JIT enabled, AOT enabled)
+OpenJ9   - 345e1b09e
+OMR      - 741e94ea8
+JCL      - 0a86953833 based on jdk-11.0.10+9)
+javac 11.0.10
+gsql (GaussDB Kernel 505.1.0 build 21af9b4f) compiled at 2024-04-18 22:54:52 commit 8474 last mr 17213 release
+72ffc8da0de0a41c7c6b6c71f727c78a344a97d06e3d7449bcfeb9c90f580c71  libs/gaussdbjdbc.jar

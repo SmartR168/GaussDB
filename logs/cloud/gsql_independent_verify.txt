@@ -1,0 +1,106 @@
+脚本启动于 2026年11月03日 星期二 16时22分37秒
+Password for user db_dev: 
+Pager usage is off.
+You are connected to database "finance" as user "db_dev" on host "192.168.0.125" at port "8000".
+ current_database | current_user |                                                version                                                |       current_timestamp       
+------------------+--------------+-------------------------------------------------------------------------------------------------------+-------------------------------
+ finance          | db_dev       | gaussdb (GaussDB Kernel 507.0.0 build d414f3bb) compiled at 2026-05-31 13:54:37 last mr 27222 release | 2026-11-03 16:22:51.840767+08
+(1 row)
+
+ server_encoding 
+-----------------
+ UTF8
+(1 row)
+
+ autoanalyze 
+-------------
+ on
+(1 row)
+
+ nspname | owner  
+---------+--------
+ finance | db_dev
+(1 row)
+
+     tablename     | tableowner 
+-------------------+------------
+ bank_card         | db_dev
+ client            | db_dev
+ command_request   | db_dev
+ financial_asset   | db_dev
+ financial_product | db_dev
+ transaction_event | db_dev
+(6 rows)
+
+     tablename     |       indexname        |                                                                      indexdef                                                                      
+-------------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------
+ bank_card         | bank_card_pkey         | CREATE UNIQUE INDEX bank_card_pkey ON finance.bank_card USING ubtree (b_number) WITH (storage_type=USTORE) TABLESPACE pg_default
+ bank_card         | idx_card_client        | CREATE INDEX idx_card_client ON finance.bank_card USING ubtree (b_client_id) WITH (storage_type=USTORE) TABLESPACE pg_default
+ client            | client_c_id_card_key   | CREATE UNIQUE INDEX client_c_id_card_key ON finance.client USING ubtree (c_id_card) WITH (storage_type=USTORE) TABLESPACE pg_default
+ client            | client_c_mail_key      | CREATE UNIQUE INDEX client_c_mail_key ON finance.client USING ubtree (c_mail) WITH (storage_type=USTORE) TABLESPACE pg_default
+ client            | client_c_phone_key     | CREATE UNIQUE INDEX client_c_phone_key ON finance.client USING ubtree (c_phone) WITH (storage_type=USTORE) TABLESPACE pg_default
+ client            | client_pkey            | CREATE UNIQUE INDEX client_pkey ON finance.client USING ubtree (c_id) WITH (storage_type=USTORE) TABLESPACE pg_default
+ command_request   | command_request_pkey   | CREATE UNIQUE INDEX command_request_pkey ON finance.command_request USING ubtree (request_id) WITH (storage_type=USTORE) TABLESPACE pg_default
+ financial_asset   | financial_asset_pkey   | CREATE UNIQUE INDEX financial_asset_pkey ON finance.financial_asset USING ubtree (a_id) WITH (storage_type=USTORE) TABLESPACE pg_default
+ financial_asset   | idx_asset_client       | CREATE INDEX idx_asset_client ON finance.financial_asset USING ubtree (a_client_id) WITH (storage_type=USTORE) TABLESPACE pg_default
+ financial_asset   | idx_asset_product      | CREATE INDEX idx_asset_product ON finance.financial_asset USING ubtree (a_product_id) WITH (storage_type=USTORE) TABLESPACE pg_default
+ financial_asset   | idx_asset_purchase     | CREATE INDEX idx_asset_purchase ON finance.financial_asset USING ubtree (a_purchase_time) WITH (storage_type=USTORE) TABLESPACE pg_default
+ financial_product | financial_product_pkey | CREATE UNIQUE INDEX financial_product_pkey ON finance.financial_product USING ubtree (p_id) WITH (storage_type=USTORE) TABLESPACE pg_default
+ transaction_event | transaction_event_pkey | CREATE UNIQUE INDEX transaction_event_pkey ON finance.transaction_event USING ubtree (request_id) WITH (storage_type=USTORE) TABLESPACE pg_default
+(13 rows)
+
+    table_name     | rows 
+-------------------+------
+ client            |   10
+ bank_card         |   10
+ financial_product |    4
+ financial_asset   |    4
+ command_request   |    4
+ transaction_event |    4
+(6 rows)
+
+ a_id | a_client_id | a_product_id | a_type |      a_status      | a_quantity | a_income |    a_purchase_time     
+------+-------------+--------------+--------+--------------------+------------+----------+------------------------
+    1 |           1 |            1 |      1 | 可用               |          4 |     8001 | 2018-07-01 00:00:00 AD
+    2 |           2 |            2 |      1 | 可用               |          3 |     8002 | 2018-07-02 00:00:00 AD
+    3 |           3 |            3 |      1 | 可用               |          2 |     8003 | 2018-07-03 00:00:00 AD
+    4 |           4 |            4 |      1 | 冻结               |          1 |     8004 | 2018-07-04 00:00:00 AD
+(4 rows)
+
+ total_quantity | total_income 
+----------------+--------------
+             10 |        32010
+(1 row)
+
+  request_id   | action | result_id | result_code 
+---------------+--------+-----------+-------------
+ lab5_buy      | BUY    |    920001 | SUCCESS
+ lab5_race_buy | BUY    |    920002 | SUCCESS
+ lab5_race_ra  | REDEEM |    920002 | SUCCESS
+ lab5_redeem   | REDEEM |    920001 | SUCCESS
+(4 rows)
+
+  request_id   | action | asset_id | client_id | product_id | quantity | income |         event_time         
+---------------+--------+----------+-----------+------------+----------+--------+----------------------------
+ lab5_buy      | BUY    |   920001 |    910001 |          1 |      100 |      0 | 2026-11-03 15:52:05.902102
+ lab5_race_buy | BUY    |   920002 |    910001 |          1 |      200 |      0 | 2026-11-03 15:52:06.870364
+ lab5_race_ra  | REDEEM |   920002 |    910001 |          1 |      200 |      0 | 2026-11-03 15:52:07.082244
+ lab5_redeem   | REDEEM |   920001 |    910001 |          1 |      100 |      0 | 2026-11-03 15:52:06.609708
+(4 rows)
+
+ incomplete_requests 
+---------------------
+                   0
+(1 row)
+
+ missing_event 
+---------------
+             0
+(1 row)
+
+ orphan_assets 
+---------------
+             0
+(1 row)
+
+total time: 28  ms

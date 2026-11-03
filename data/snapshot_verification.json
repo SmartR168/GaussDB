@@ -1,0 +1,32 @@
+[
+  {
+    "table": "bank_card",
+    "sha256": "050f279d3f32bdca761aef1869e45957b6ac76df9d911a0c3beb847a7a73aa3c",
+    "identical": true
+  },
+  {
+    "table": "client",
+    "sha256": "751bc7c9732138b37b06eda3f56bb41d4b9312837aecbb751baba91333b1d437",
+    "identical": true
+  },
+  {
+    "table": "command_request",
+    "sha256": "ed151cf7a71cbd7ce79d34892b496ab0de5a37b3c668ee6daa27b2ccae42bbfc",
+    "identical": true
+  },
+  {
+    "table": "financial_asset",
+    "sha256": "cd4afec14143bc737073317ede0186f8dc582dd6c523dbb317564f36b626ab0c",
+    "identical": true
+  },
+  {
+    "table": "financial_product",
+    "sha256": "882e0b896d3cce172a8be688db5485ea9f01a3ac35e97c80b184cd9ecbec1279",
+    "identical": true
+  },
+  {
+    "table": "transaction_event",
+    "sha256": "150c25bbf8adb7875775f65d4aaf614cca17ed249d5139afc428024e7bf7dc71",
+    "identical": true
+  }
+]

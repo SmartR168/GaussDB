@@ -1,0 +1,113 @@
+脚本启动于 2026年11月03日 星期二 16时24分07秒
+Database password (not echoed): 
+
+1客户列表 2客户详情 3修改客户 4开户 5开卡 6销卡 7销户 8产品列表 9申购 10赎回 11客户资产汇总 12产品持仓 13月度统计 0退出
+菜单: 1
+11月 03, 2026 4:26:26 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [eea02acb-1085-44f3-a94a-136add3c4583] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 4:26:27 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39428/192.168.0.125:8000] Connection is established. ID: eea02acb-1085-44f3-a94a-136add3c4583
+11月 03, 2026 4:26:27 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: eea02acb-1085-44f3-a94a-136add3c4583
+c_id | c_name | c_id_card | c_phone | c_mail
+1 | 左晓婷 | 340211199301010001 | 18815650001 | zuoxiaoting@huawei.com
+2 | 虞成刚 | 340211199301010002 | 18815650002 | yuchenggang@huawei.com
+3 | 朱长刚 | 340211199301010003 | 18815650003 | zhuchanggang@huawei.com
+4 | 任高峰 | 340211199301010004 | 18815650004 | rengaofeng@huawei.com
+5 | 安艳芳 | 340211199301010005 | 18815650005 | anyanfang@huawei.com
+6 | 滕长丽 | 340211199301010006 | 18815650006 | tengchangli@huawei.com
+7 | 傅小芳 | 340211199301010007 | 18815650007 | fuxiaofang@huawei.com
+8 | 卞兰娟 | 340211199301010008 | 18815650008 | bianlanjuan@huawei.com
+9 | 邵小婷 | 340211199301010009 | 18815650009 | shaoxiaoting@huawei.com
+10 | 章晓峰 | 340211199301010010 | 18815650010 | zhangxiaofeng@huawei.com
+(10 rows)
+
+1客户列表 2客户详情 3修改客户 4开户 5开卡 6销卡 7销户 8产品列表 9申购 10赎回 11客户资产汇总 12产品持仓 13月度统计 0退出
+菜单: 2
+客户编号: 1
+11月 03, 2026 4:26:34 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [317f33a8-d299-4c2f-893a-a00f93ca0347] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 4:26:34 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39430/192.168.0.125:8000] Connection is established. ID: 317f33a8-d299-4c2f-893a-a00f93ca0347
+11月 03, 2026 4:26:34 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 317f33a8-d299-4c2f-893a-a00f93ca0347
+client
+c_id | c_name | c_id_card | c_phone | c_mail
+1 | 左晓婷 | 340211199301010001 | 18815650001 | zuoxiaoting@huawei.com
+(1 rows)
+bank_card
+b_number | b_type | b_client_id
+6222021302020000001 | 信用卡 | 1
+(1 rows)
+financial_asset
+a_id | a_client_id | a_product_id | a_type | a_status | a_quantity | a_income | a_purchase_time
+1 | 1 | 1 | 1 | 可用 | 4 | 8001 | 2018-07-01 00:00:00 AD
+(1 rows)
+
+1客户列表 2客户详情 3修改客户 4开户 5开卡 6销卡 7销户 8产品列表 9申购 10赎回 11客户资产汇总 12产品持仓 13月度统计 0退出
+菜单: 8
+11月 03, 2026 4:26:56 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [1f757cf3-5486-405d-9407-820ed50f0934] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 4:26:56 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39434/192.168.0.125:8000] Connection is established. ID: 1f757cf3-5486-405d-9407-820ed50f0934
+11月 03, 2026 4:26:56 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 1f757cf3-5486-405d-9407-820ed50f0934
+p_id | p_name | p_description | p_amount | p_year
+1 | 债券 | 以国 债、金融央行票据企业为主要投资方向的银理财产品。 | 50000 | 6
+2 | 信贷资产 | 一般指银行作为委托人将通过发理财产品募集资金给信公司，成立计划产购买理财品发售银行或第三方信贷资。 | 50000 | 6
+3 | 股票 | 与股票 挂钩的理财产品。目前市场上主要以港股居多 | 50000 | 6
+4 | 大宗商品 | 与 大宗商品期货挂钩的理财产。 目前市场上主要以挂钩黄金、石油农产品的理财居多。 | 50000 | 6
+(4 rows)
+
+1客户列表 2客户详情 3修改客户 4开户 5开卡 6销卡 7销户 8产品列表 9申购 10赎回 11客户资产汇总 12产品持仓 13月度统计 0退出
+菜单: 11
+11月 03, 2026 4:26:59 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [75b91940-543e-4c7d-b55f-9a617000ad26] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 4:26:59 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39436/192.168.0.125:8000] Connection is established. ID: 75b91940-543e-4c7d-b55f-9a617000ad26
+11月 03, 2026 4:26:59 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 75b91940-543e-4c7d-b55f-9a617000ad26
+c_id | c_name | card_count | asset_count | quantity_total | income_total | available_quantity | frozen_quantity
+1 | 左晓婷 | 1 | 1 | 4 | 8001 | 4 | 0
+2 | 虞成刚 | 1 | 1 | 3 | 8002 | 3 | 0
+3 | 朱长刚 | 1 | 1 | 2 | 8003 | 2 | 0
+4 | 任高峰 | 1 | 1 | 1 | 8004 | 0 | 1
+5 | 安艳芳 | 1 | 0 | 0 | 0 | 0 | 0
+6 | 滕长丽 | 1 | 0 | 0 | 0 | 0 | 0
+7 | 傅小芳 | 1 | 0 | 0 | 0 | 0 | 0
+8 | 卞兰娟 | 1 | 0 | 0 | 0 | 0 | 0
+9 | 邵小婷 | 1 | 0 | 0 | 0 | 0 | 0
+10 | 章晓峰 | 1 | 0 | 0 | 0 | 0 | 0
+(10 rows)
+
+1客户列表 2客户详情 3修改客户 4开户 5开卡 6销卡 7销户 8产品列表 9申购 10赎回 11客户资产汇总 12产品持仓 13月度统计 0退出
+菜单: 12
+11月 03, 2026 4:27:03 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [5ebc0fc9-579d-408e-a931-f96069031e4f] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 4:27:03 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39440/192.168.0.125:8000] Connection is established. ID: 5ebc0fc9-579d-408e-a931-f96069031e4f
+11月 03, 2026 4:27:03 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 5ebc0fc9-579d-408e-a931-f96069031e4f
+p_id | p_name | asset_count | client_count | quantity_total | income_total | frozen_quantity
+1 | 债券 | 1 | 1 | 4 | 8001 | 0
+2 | 信贷资产 | 1 | 1 | 3 | 8002 | 0
+3 | 股票 | 1 | 1 | 2 | 8003 | 0
+4 | 大宗商品 | 1 | 1 | 1 | 8004 | 1
+(4 rows)
+
+1客户列表 2客户详情 3修改客户 4开户 5开卡 6销卡 7销户 8产品列表 9申购 10赎回 11客户资产汇总 12产品持仓 13月度统计 0退出
+菜单: 13
+起日（含）: 2018-07-01
+止日（不含）: 2018-08-01
+11月 03, 2026 4:27:15 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [4f3f1a5e-d669-4b22-a61c-1167b9dd8294] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 4:27:15 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39442/192.168.0.125:8000] Connection is established. ID: 4f3f1a5e-d669-4b22-a61c-1167b9dd8294
+11月 03, 2026 4:27:15 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 4f3f1a5e-d669-4b22-a61c-1167b9dd8294
+purchase_month | purchase_count | client_count | quantity_total | income_total
+2018-07 | 4 | 4 | 10 | 32010
+(1 rows)
+
+1客户列表 2客户详情 3修改客户 4开户 5开卡 6销卡 7销户 8产品列表 9申购 10赎回 11客户资产汇总 12产品持仓 13月度统计 0退出
+菜单: 0

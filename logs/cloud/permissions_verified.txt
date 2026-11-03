@@ -1,0 +1,54 @@
+脚本启动于 2026年11月03日 星期二 16时06分34秒
+Existing password for db_dev: 
+Existing password for test: 
+11月 03, 2026 4:07:09 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [e738ca0a-a283-4162-b2b8-39786170463d] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 4:07:09 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39306/192.168.0.125:8000] Connection is established. ID: e738ca0a-a283-4162-b2b8-39786170463d
+11月 03, 2026 4:07:09 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: e738ca0a-a283-4162-b2b8-39786170463d
+STAGE_1 no schema and no table permission
+11月 03, 2026 4:07:09 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [e9a27aac-1bd9-4cad-8528-9f89980bcd8b] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 4:07:09 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39308/192.168.0.125:8000] Connection is established. ID: e9a27aac-1bd9-4cad-8528-9f89980bcd8b
+11月 03, 2026 4:07:09 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: e9a27aac-1bd9-4cad-8528-9f89980bcd8b
+current_user | current_database
+test | finance
+(1 rows)
+PASS 1 test SELECT denied at expected permission stage [SQLSTATE=42501]
+STAGE_2 schema USAGE only
+11月 03, 2026 4:07:09 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [75857f92-42a9-4a25-ab9b-6d8eaad7a492] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 4:07:09 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39310/192.168.0.125:8000] Connection is established. ID: 75857f92-42a9-4a25-ab9b-6d8eaad7a492
+11月 03, 2026 4:07:09 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 75857f92-42a9-4a25-ab9b-6d8eaad7a492
+current_user | current_database
+test | finance
+(1 rows)
+PASS 2 test SELECT denied at expected permission stage [SQLSTATE=42501]
+STAGE_3 schema USAGE + client SELECT
+11月 03, 2026 4:07:09 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [e39b8206-15a1-4852-8447-007ed4d12a11] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 4:07:09 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39312/192.168.0.125:8000] Connection is established. ID: e39b8206-15a1-4852-8447-007ed4d12a11
+11月 03, 2026 4:07:09 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: e39b8206-15a1-4852-8447-007ed4d12a11
+current_user | current_database
+test | finance
+(1 rows)
+PASS 3 test SELECT succeeds after explicit table grant
+PASS 4 Unrelated table remains denied [SQLSTATE=42501]
+11月 03, 2026 4:07:09 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [6c3c3b9d-d29f-480e-8c06-cc913e8a1f87] Try to connect. IP: 192.168.0.125:8000
+11月 03, 2026 4:07:09 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: [192.168.0.126:39314/192.168.0.125:8000] Connection is established. ID: 6c3c3b9d-d29f-480e-8c06-cc913e8a1f87
+11月 03, 2026 4:07:09 下午 com.huawei.gaussdb.jdbc.core.v3.ConnectionFactoryImpl openConnectionImpl
+信息: Connect complete. ID: 6c3c3b9d-d29f-480e-8c06-cc913e8a1f87
+PASS 5 test remains unable to update client [SQLSTATE=42501]
+grantee | table_schema | table_name | privilege_type
+test | finance | client | SELECT
+(1 rows)
+PERMISSION_CHECKS_PASSED=5

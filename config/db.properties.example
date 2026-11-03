@@ -1,0 +1,3 @@
+JDBC_DRIVER=com.huawei.gaussdb.jdbc.Driver
+DB_URL=jdbc:gaussdb://<实际主节点或浮动地址>:8000/finance
+USER=db_dev
